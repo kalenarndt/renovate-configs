@@ -1,0 +1,17 @@
+fail_fast: false
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+    - id: check-added-large-files
+      args: [--maxkb=1024]
+      exclude: "images/.*"
+    - id: detect-private-key
+    - id: check-merge-conflict
+    - id: check-case-conflict
+    - id: check-symlinks
+    - id: destroyed-symlinks
+    - id: check-yaml
+      args: [--allow-multiple-documents]
+      exclude: "templates/.*"
+    - id: check-vcs-permalinks

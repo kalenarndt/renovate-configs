@@ -1,0 +1,23 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+      "config:base",
+      ":semanticCommits",
+      ":enablePreCommit",
+      ":disableRateLimiting",
+      "github>kalenarndt/renovate-module-templates:commitMessage.json",
+      "github>kalenarndt/renovate-module-templates:labels.json",
+      "github>kalenarndt/renovate-module-templates:groups.json",
+      "github>kalenarndt/renovate-module-templates:semanticCommits.json",
+      "helpers:pinGitHubActionDigests"
+    ],
+    "platform": "github",
+    "onboarding": false,
+    "requireConfig": "optional",
+    "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+    "suppressNotifications": ["prIgnoreNotification"],
+    "rebaseWhen": "conflicted",
+    "commitBodyTable": true,
+    "reviewersFromCodeOwners": true
+}
+

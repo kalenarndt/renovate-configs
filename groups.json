@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "description": "asdf, rtx, pre-commit package updates",
+      "groupName": "deps-tools",
+      "matchManagers": ["asdf","pre-commit"],
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
+    }
+  ]
+}
