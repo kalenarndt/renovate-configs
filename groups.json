@@ -3,7 +3,7 @@
     {
       "description": "asdf, rtx, pre-commit package updates",
       "groupName": "deps-tools",
-      "matchManagers": ["asdf","pre-commit"],
+      "matchManagers": ["asdf","pre-commit", "ansible", "terraform", "github-actions"],
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
       "separateMinorPatch": false
     }
